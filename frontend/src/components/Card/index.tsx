@@ -28,8 +28,8 @@ export const LightGreyCard = styled(Card)`
 `
 
 export const CustomGreyCard = styled(Card)`
-  border: 1px solid #0094FF;
-  background: radial-gradient(43.91% 300.21% at 56.09% -78.09%, rgba(0, 0, 0, 0.5) 21.87%, rgba(0, 0, 0, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: #040904;
+  border: 1px solid #0094ff;
   opacity: 0.8;
 `
 

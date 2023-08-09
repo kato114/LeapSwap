@@ -46,13 +46,11 @@ const SwapTokenDetailsHorizontal: React.FC<{
   const priceUpPercent = Number(tokenData?.priceChangeUSD).toFixed(2);
   const prices = priceData ? priceData.map((price: any) => price.close) : [];
 
-  console.log("aria: selectedAddress = ", addresses[0])
   const { error: tokenDataError, data: tokenDatas } = useFetchedTokenDatas(addresses)
-    console.log("aria: tokenData = ", tokenDatas)
   // const { ethPrice } = useEthPrice();
   // const { maticPrice } = useMaticPrice();
-//   const config = getConfig(chainId);
-//   const v2 = config['v2'];
+  // const config = getConfig(chainId);
+  // const v2 = config['v2'];
 
   // const setChartData = () => {
   //   setTokenData(useTokenDatas());

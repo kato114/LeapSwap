@@ -19,8 +19,8 @@ export const setupNetwork = async () => {
             chainId: `0x${chainId.toString(16)}`,
             chainName: 'Butan Chain Mainnet',
             nativeCurrency: {
-              name: 'BBC',
-              symbol: 'BBC',
+              name: 'ETH',
+              symbol: 'ETH',
               decimals: 18,
             },
             rpcUrls: nodes,

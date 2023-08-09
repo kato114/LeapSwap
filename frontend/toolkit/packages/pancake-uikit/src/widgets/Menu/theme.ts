@@ -6,5 +6,5 @@ export const light: NavTheme = {
 };
 
 export const dark: NavTheme = {
-  background: "#000719",
+  background: "#040904",
 };

@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "contract IBEP20",
-        "name": "_flamez",
+        "name": "_leap",
         "type": "address"
       },
       {
@@ -13,7 +13,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_flamezPerBlock",
+        "name": "_leapPerBlock",
         "type": "uint256"
       },
       {
@@ -237,7 +237,7 @@
   },
   {
     "inputs": [],
-    "name": "flamez",
+    "name": "leap",
     "outputs": [
       {
         "internalType": "contract IBEP20",
@@ -250,7 +250,7 @@
   },
   {
     "inputs": [],
-    "name": "flamezPerBlock",
+    "name": "leapPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -357,7 +357,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingFlamez",
+    "name": "pendingLeap",
     "outputs": [
       {
         "internalType": "uint256",
@@ -414,7 +414,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accFlamezPerShare",
+        "name": "accLeapPerShare",
         "type": "uint256"
       }
     ],
@@ -543,11 +543,11 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_flamezPerBlock",
+        "name": "_leapPerBlock",
         "type": "uint256"
       }
     ],
-    "name": "updateFlamezPerBlock",
+    "name": "updateLeapPerBlock",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

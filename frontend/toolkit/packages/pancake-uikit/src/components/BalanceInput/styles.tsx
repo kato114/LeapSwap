@@ -17,7 +17,7 @@ export const UnitContainer = styled(Text)`
 `;
 
 export const StyledBalanceInput = styled(Box)<{ isWarning: BalanceInputProps["isWarning"] }>`
-  background: radial-gradient(43.91% 300.21% at 56.09% -78.09%, rgba(38, 108, 192, 0.5) 21.87%, rgba(26, 76, 156, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;;
+  background: #040904;
   opacity: 0.8;
   border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
   border-radius: 16px;

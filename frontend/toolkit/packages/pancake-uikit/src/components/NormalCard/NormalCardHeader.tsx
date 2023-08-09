@@ -7,7 +7,7 @@ export interface NormalCardHeaderProps extends SpaceProps {
 }
 
 const NormalCardHeader = styled.div<NormalCardHeaderProps>`
-  background: #052148;
+  background: #054808;
   border-radius: ${({ theme }) => `${theme.radii.card} ${theme.radii.card} 0 0`};
   ${space}
 `;

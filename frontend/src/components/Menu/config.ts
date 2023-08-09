@@ -114,11 +114,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/flamez-io',
+        href: 'https://github.com/leap-io',
       },
       {
         label: t('Whitepaper'),
-        href: 'http://docs.flamez.io/',
+        href: 'http://docs.leap.io/',
       },
       // {
       //   label: t('SolidProof'),

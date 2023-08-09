@@ -113,7 +113,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Flamez LPs',
+      name: 'Leap LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -487,16 +487,16 @@ export default function RemoveLiquidity({
                   mb="16px"
                 />
                 <Flex flexWrap="wrap" justifyContent="space-evenly">
-                  <Button style={{color:"#268ac4", borderColor:"#268ac4"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '25')}>
+                  <Button style={{color:"#5fa729", borderColor:"#5fa729"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '25')}>
                     25%
                   </Button>
-                  <Button style={{color:"#268ac4", borderColor:"#268ac4"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '50')}>
+                  <Button style={{color:"#5fa729", borderColor:"#5fa729"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '50')}>
                     50%
                   </Button>
-                  <Button style={{color:"#268ac4", borderColor:"#268ac4"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '75')}>
+                  <Button style={{color:"#5fa729", borderColor:"#5fa729"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '75')}>
                     75%
                   </Button>
-                  <Button style={{color:"#268ac4", borderColor:"#268ac4"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '100')}>
+                  <Button style={{color:"#5fa729", borderColor:"#5fa729"}} variant="tertiary" scale="sm" onClick={() => onUserInput(Field.LIQUIDITY_PERCENT, '100')}>
                     Max
                   </Button>
                 </Flex>

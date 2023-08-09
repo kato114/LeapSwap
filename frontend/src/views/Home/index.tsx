@@ -89,9 +89,9 @@ const Home: React.FC = () => {
   const totalValue = useTotalValue()
 
   const { farmsWithStakedBalance, earningsSum: farmEarningsSum } = useFarmsWithBalance()
-  const { balance: userCheese, fetchStatus } = useTokenBalance(tokens.got.address[chainId])
+  // const { balance: userCheese, fetchStatus } = useTokenBalance(tokens.got.address[chainId])
 
-  const burnedBalance = getBalanceNumber(useBurnedBalance(tokens.got.address[chainId]))
+  const burnedBalance = 0; // getBalanceNumber(useBurnedBalance(tokens.got.address[chainId]))
 
   const totalSupply = useTotalSupply()
   const circulation = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
         <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: 'Flamez'
+            screenName: 'Leap'
           }}
           options={{
             height: '300',

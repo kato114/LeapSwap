@@ -23,7 +23,7 @@ const useFarmsWithBalance = () => {
     const fetchBalances = async () => {
       const calls = farmsConfig.map((farm) => ({
         address: getMasterChefAddress(),
-        name: 'pendingFlamez',
+        name: 'pendingLeap',
         params: [farm.pid, account],
       }))
 

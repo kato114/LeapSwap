@@ -19,7 +19,7 @@ export const CurrencyLogo: React.FC<{
   const src = useMemo(() => {
     const checksummedAddress = isAddress(address)
     if (checksummedAddress) {
-      return `https://flamez-dex.netlify.app/images/tokens/${checksummedAddress}.png`
+      return `https://leap-dex.netlify.app/images/tokens/${checksummedAddress}.png`
     }
     return null
   }, [address])

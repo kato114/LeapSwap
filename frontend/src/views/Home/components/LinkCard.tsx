@@ -19,7 +19,6 @@ const CardWraper = styled.div<{ color: string }>`
   border-radius: 19px;
 
 `
-console.log("heigth",CardWraper);
 
 const Content = styled.div`
   padding: 24px;

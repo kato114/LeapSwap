@@ -35,13 +35,13 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
       {hasLowBnbBalance && (
         <Message variant="warning" mb="24px">
           <Box>
-            <Text fontWeight="bold">{t('BBC Balance Low')}</Text>
-            <Text as="p">{t('You need BBC for transaction fees.')}</Text>
+            <Text fontWeight="bold">{t('ETH Balance Low')}</Text>
+            <Text as="p">{t('You need ETH for transaction fees.')}</Text>
           </Box>
         </Message>
       )}
       <Flex alignItems="center" justifyContent="space-between">
-        <Text color="textSubtle">{t('BBC Balance')}</Text>
+        <Text color="textSubtle">{t('ETH Balance')}</Text>
         <Text>{getFullDisplayBalance(balance, 18, 6)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
@@ -49,7 +49,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         <Text>{getFullDisplayBalance(cakeBalance, 18, 3)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getBscScanLink(account, 'address')}>{t('View on BBCScan')}</LinkExternal>
+        <LinkExternal href={getBscScanLink(account, 'address')}>{t('View on Pepescan')}</LinkExternal>
       </Flex>
       <Button variant="secondary" width="100%" onClick={handleLogout}>
         {t('Disconnect Wallet')}

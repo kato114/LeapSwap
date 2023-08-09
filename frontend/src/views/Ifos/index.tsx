@@ -67,7 +67,6 @@ const Ifos = () => {
   const handleClick = (newIndex) => setIndex(newIndex);
 
   const { path, url, isExact } = useRouteMatch()
-  console.log("activeIndex path= ", index)
   
     return (
     <Page>

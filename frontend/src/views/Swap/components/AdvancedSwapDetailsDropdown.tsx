@@ -20,7 +20,10 @@ export default function AdvancedSwapDetailsDropdown({ trade, ...rest }: Advanced
   const lastTrade = useLastTruthy(trade)
 
   return (
-    <AdvancedDetailsFooter show={Boolean(trade)} style={{background: 'radial-gradient(43.91% 300.21% at 56.09% -78.09%, #1E61B7 26.56%, #042148 98.96%)', border:"1px solid #0094FF", borderRadius:"16px"}}>
+    <AdvancedDetailsFooter
+      show={Boolean(trade)}
+      style={{ background: '#040904', border: '1px solid #43e300', borderRadius: '16px' }}
+    >
       <AdvancedSwapDetails {...rest} trade={trade ?? lastTrade ?? undefined} />
     </AdvancedDetailsFooter>
   )

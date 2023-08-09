@@ -38,8 +38,8 @@ const InputPanel = styled.div<{ hideInput?: boolean }>`
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  border: 1px solid;
   border-radius: ${({ hideInput }) => (hideInput ? '8px' : '20px')};
-  background: radial-gradient(43.91% 300.21% at 56.09% -78.09%, rgba(38, 108, 192, 0.5) 21.87%, rgba(26, 76, 156, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   opacity: 0.8;
   z-index: 1;
 `
@@ -115,7 +115,7 @@ export default function CurrencyInputPanel({
               <NumericalInput
                 className="token-amount-input"
                 value={value}
-                style={{ color:"#1cabe0" }}
+                style={{ color:"#43e300" }}
                 onUserInput={(val) => {
                   onUserInput(val)
                 }}
@@ -143,11 +143,11 @@ export default function CurrencyInputPanel({
                 <CurrencyLogo currency={currency} size="24px" style={{ marginRight: '8px' }} />
               ) : null}
               {pair ? (
-                <Text id="pair" style={{color:"#1cabe0"}}>
+                <Text id="pair" style={{color:"#43e300"}}>
                   {pair?.token0.symbol}:{pair?.token1.symbol}
                 </Text>
               ) : (
-                <Text id="pair" style={{color:"#1cabe0"}}>
+                <Text id="pair" style={{color:"#43e300"}}>
                   {(currency && currency.symbol && currency.symbol.length > 20
                     ? `${currency.symbol.slice(0, 4)}...${currency.symbol.slice(
                         currency.symbol.length - 5,

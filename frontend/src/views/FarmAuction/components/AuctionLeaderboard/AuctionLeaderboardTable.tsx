@@ -96,7 +96,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
           {lpAddress && (
             <SubMenuItem
               as={LinkExternal}
-              href={`https://flamez-dex.netlify.app/pool/${lpAddress}`}
+              href={`https://leap-dex.netlify.app/pool/${lpAddress}`}
               bold={false}
               color="text"
             >

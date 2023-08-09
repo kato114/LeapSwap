@@ -113,7 +113,7 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(3)
+  const cakeBnbFarm = useFarmFromPid(1)
 
   const cakePriceBusdAsString = cakeBnbFarm.token.busdPrice
 

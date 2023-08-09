@@ -147,7 +147,7 @@ const ExpandedFooter: React.FC<ExpandedFooterProps> = ({ pool, account }) => {
         </Flex>
       )}
       <Flex mb="2px" justifyContent="flex-end">
-        <LinkExternal href={`https://flamez-dex.netlify.app/token/${getAddress(earningToken.address)}`} bold={false} small>
+        <LinkExternal href={`https://leap-dex.netlify.app/token/${getAddress(earningToken.address)}`} bold={false} small>
           {t('See Token Info')}
         </LinkExternal>
       </Flex>

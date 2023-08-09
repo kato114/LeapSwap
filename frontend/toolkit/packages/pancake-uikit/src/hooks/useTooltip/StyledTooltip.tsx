@@ -25,9 +25,9 @@ export const StyledTooltip = styled.div`
   border-radius: 16px;
   max-width: 320px;
   z-index: 101;
-  background: radial-gradient(43.91% 300.21% at 56.09% -78.09%, #1E61B7 26.56%, #042148 98.96%);
+  background: #040904;
   color: #72c2ed;
-  border: 1px solid rgba(0, 148, 255, 1);
+  border: 1px solid;
 
   &[data-popper-placement^="top"] > ${Arrow} {
     bottom: -4px;

@@ -19,7 +19,7 @@ export const scaleVariants = {
 export const styleVariants = {
   [variants.PRIMARY]: {
     // backgroundColor: "primary",
-    background: "linear-gradient(180deg, #00A4E0 0%, #0667D4 100%)",
+    background: "linear-gradient(180deg,#00e029 0%,#06d453 100%)",
     color: "white",
     ":disabled": {
       background: "transparent",
@@ -45,7 +45,7 @@ export const styleVariants = {
   },
   [variants.SUBTLE]: {
     backgroundColor: "textSubtle",
-    color: "#21c5f6",
+    color: "#03db3c",
   },
   [variants.DANGER]: {
     backgroundColor: "failure",
@@ -57,7 +57,7 @@ export const styleVariants = {
   },
   [variants.TEXT]: {
     backgroundColor: "transparent",
-    color: "#21c5f6",
+    color: "#03db3c",
     boxShadow: "none",
   },
 };

@@ -79,7 +79,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
   stakingTokenPrice,
   multiplier,
   initialValue,
-  earningTokenSymbol = 'FLAMEZ',
+  earningTokenSymbol = 'LEAP',
   autoCompoundFrequency = 0,
   performanceFee = 0,
   isFarm = false,
@@ -166,7 +166,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
               p="4px 16px"
               width="68px"
               variant="tertiary"
-              style={{color:"#268ac4", borderColor:"#268ac4"}}
+              style={{color:"#5fa729", borderColor:"#5fa729"}}
               onClick={() => setPrincipalFromUSDValue('100')}
             >
               $100
@@ -176,7 +176,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
               p="4px 16px"
               width="68px"
               variant="tertiary"
-              style={{color:"#268ac4", borderColor:"#268ac4"}}
+              style={{color:"#5fa729", borderColor:"#5fa729"}}
               onClick={() => setPrincipalFromUSDValue('1000')}
             >
               $1000
@@ -186,7 +186,7 @@ const RoiCalculatorModal: React.FC<RoiCalculatorModalProps> = ({
               scale="xs"
               p="4px 16px"
               width="128px"
-              style={{color:"#268ac4", borderColor:"#268ac4"}}
+              style={{color:"#5fa729", borderColor:"#5fa729"}}
               variant="tertiary"
               onClick={() =>
                 setPrincipalFromUSDValue(getBalanceNumber(stakingTokenBalance.times(stakingTokenPrice)).toString())

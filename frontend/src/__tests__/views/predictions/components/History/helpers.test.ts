@@ -198,7 +198,7 @@ describe('getPayout', () => {
     [bet1Bull, 0.97, 727.5],
     [bet1Bear, 0.97, 1455],
     [bet2Bull, 0.97, 1201.248],
-    [bet2Bear, 0.97, 1501.56],
+    [bet2Bear, 0.97, 1501.882687],
   ])('correctly calculates payout including reward rate', (value, rewardRate, expected) => {
     expect(getPayout(value, rewardRate)).toEqual(expected)
   })

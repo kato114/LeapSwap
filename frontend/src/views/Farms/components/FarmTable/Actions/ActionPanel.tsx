@@ -150,7 +150,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
   })
   const lpAddress = getAddress(farm.lpAddresses)
   const bsc = getBscScanLink(lpAddress, 'address')
-  const info = `https://flamez-dex.netlify.app/pool/${lpAddress}`
+  const info = `https://leap-dex.netlify.app/pool/${lpAddress}`
 
   return (
     <Container expanded={expanded}>

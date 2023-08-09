@@ -22,13 +22,13 @@ const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 125px;
+    width: 51px;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
   }
   .desktop-icon {
-    width: 160px;
+    width: 51px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
@@ -50,7 +50,6 @@ const StyledLink = styled(Link)`
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
-  console.log("isDark, ", isDark);
   const innerLogo = (
     <>
       <LogoWithText className="mobile-icon"  isDark={isDark} />
@@ -60,19 +59,19 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
+      {/* <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
         {isPushed ? (
           <HamburgerCloseIcon width="24px" color="textSubtle" />
         ) : (
           <HamburgerIcon width="24px" color="textSubtle" />
         )}
-      </MenuButton>
+      </MenuButton> */}
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="LeapSwap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="LeapSwap home page">
           {innerLogo}
         </StyledLink>
       )}

@@ -37,7 +37,6 @@ const fetchTokenPriceData = async (
   error: boolean
 }> => {
   // Construct timestamps to query against
-  console.log("Beast priceData", address)
   const endTimestamp = getUnixTime(new Date())
   const timestamps = []
   let time = startTimestamp
@@ -53,7 +52,6 @@ const fetchTokenPriceData = async (
         error: false,
       }
     }
-    console.log("Beast priceData", blocks)
 
     const prices: any | undefined = await multiQuery(
       priceQueryConstructor,
@@ -61,8 +59,6 @@ const fetchTokenPriceData = async (
       INFO_CLIENT,
       200,
     )
-
-    // console.log("Beast priceData", prices)
 
     if (!prices) {
       console.error('Price data failed to load')

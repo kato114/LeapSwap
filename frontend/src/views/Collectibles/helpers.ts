@@ -93,7 +93,7 @@ export const getBallerClaim = async (
   const lotteryNftContract = getBunnySpecialLotteryContract()
 
   try {
-    const isWhitelisted = await lotteryNftContract.userWhitelistForNft3(account)
+    const isWhitelisted = false; // await lotteryNftContract.userWhitelistForNft3(account)
     if (isWhitelisted) {
       try {
         const passesContractCheck = await lotteryNftContract.canClaimNft3(account)

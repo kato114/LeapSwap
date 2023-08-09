@@ -42,11 +42,9 @@ const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, them
 };
 
 export const StyledCard = styled.div<StyledCardProps>`
-  background: ${getBorderColor};
   border-radius: 12px !important;
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "menuText"]};
   position: relative;
-  background-image: linear-gradient(78.19deg, #33C6DE 9.16%, #4016ED 91.66%);
 
   &:before,
   &:after {
@@ -58,19 +56,17 @@ export const StyledCard = styled.div<StyledCardProps>`
     pointer-events: none;
     width: 60%;
     border-radius: 50%;
-    opacity: .45;
+    opacity: 0;
     mix-blend-mode: hard-light;
   }
 
   &:before {
     left: 15px;
     background-color: #e300ff;
-    box-shadow: 0 0 160px 150px #153c8da1;
   }
   &:after {
     right: 15px;
     background-color: #e300ff;
-    box-shadow: 0 0 160px 150px #153c8da1;
   }
 
   ${({ isActive }) =>
@@ -81,7 +77,7 @@ export const StyledCard = styled.div<StyledCardProps>`
     `}
 
   padding: 1px 1px 3px 1px;
-  
+
   ${space}
 `;
 
@@ -89,8 +85,8 @@ export const StyledCardInner = styled(Box)<{ background?: string; hasCustomBorde
   width: 100%;
   height: 100%;
   overflow: ${({ hasCustomBorder }) => (hasCustomBorder ? "initial" : "inherit")};
-  background: #02132F;
-  background-image: radial-gradient(80% 80% at 50% 50%, #084A9E 0%, #0A3C79 31.25%, rgba(10, 59, 121, 0) 100%);
+  background: #040904;
+  border: 1px solid;
   border-radius: ${({ theme }) => theme.radii.card};
 `;
 

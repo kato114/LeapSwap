@@ -959,13 +959,6 @@ it("renders correctly", () => {
     }
 
     @media screen and (min-width:968px) {
-      .c45 {
-        margin-left: 240px;
-        max-width: calc(100% - 240px);
-      }
-    }
-
-    @media screen and (min-width:968px) {
       .c47 {
         display: none;
       }

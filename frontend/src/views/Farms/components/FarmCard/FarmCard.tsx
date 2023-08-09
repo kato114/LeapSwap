@@ -57,7 +57,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
       : ''
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : t('Flamez')
+  const earnLabel = farm.dual ? farm.dual.earnLabel : t('Leap')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
@@ -65,7 +65,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
   })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/${liquidityUrlPathParts}`
   const lpAddress = getAddress(farm.lpAddresses)
-  const isPromotedFarm = farm.token.symbol === 'Flamez'
+  const isPromotedFarm = farm.token.symbol === 'Leap'
 
   return (
     <StyledCard isActive={isPromotedFarm}>
@@ -122,7 +122,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
           <DetailsSection
             removed={removed}
             bscScanAddress={getBscScanLink(lpAddress, 'address')}
-            infoAddress={`https://flamez-dex.netlify.app/pool/${lpAddress}`}
+            infoAddress={`https://leap-dex.netlify.app/pool/${lpAddress}`}
             totalValueFormatted={totalValueFormatted}
             lpLabel={lpLabel}
             addLiquidityUrl={addLiquidityUrl}

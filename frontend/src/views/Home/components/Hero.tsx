@@ -95,7 +95,7 @@ const Hero = () => {
     <>
       <Flex position="relative" flexDirection="column" alignItems="center" justifyContent="center">
         <Heading scale="xxl" color="primary" mb="24px">
-          {t('Flamez')}
+          {t('Leap')}
         </Heading>
         <Heading scale="md" mb="24px">
           {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}

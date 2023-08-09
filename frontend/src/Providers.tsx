@@ -13,8 +13,7 @@ import store from 'state'
 
 const ThemeProviderWrapper = (props) => {
   const [isDark] = useThemeManager()
-  console.log("isDark: ", isDark)
-  return <ThemeProvider theme={isDark ? dark : light} {...props} />
+  return <ThemeProvider theme={isDark ? dark : dark} {...props} />
 }
 
 const Providers: React.FC = ({ children }) => {

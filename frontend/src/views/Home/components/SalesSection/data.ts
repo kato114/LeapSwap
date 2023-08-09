@@ -17,7 +17,7 @@ export const swapSectionData: SalesSectionProps = {
   images: {
     path: '/images/home/trade/',
     attributes: [
-      { src: 'BBC', alt: 'BBC token' },
+      { src: 'ETH', alt: 'ETH token' },
       { src: 'BTC', alt: 'BTC token' },
       { src: 'CAKE', alt: 'CAKE token' },
     ],
@@ -54,7 +54,7 @@ export const cakeSectionData: SalesSectionProps = {
     'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    to: '/swap?outputCurrency=0xBB8f735e1ec578EF7964A13827F126b78A8439e8',
     text: 'Buy CAKE',
     external: false,
   },

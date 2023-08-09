@@ -7,7 +7,7 @@ export interface SwapCardHeaderProps extends SpaceProps {
 }
 
 const SwapCardHeader = styled.div<SwapCardHeaderProps>`
-  background: #052148;
+  background: #054808;
   border-radius: ${({ theme }) => `${theme.radii.card} ${theme.radii.card} 0 0`};
   ${space}
 `;

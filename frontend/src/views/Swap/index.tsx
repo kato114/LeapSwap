@@ -165,7 +165,7 @@ export default function Swap({ history }: RouteComponentProps) {
   // check if user has gone through approval process, used to show two step buttons, reset on token change
   const [approvalSubmitted, setApprovalSubmitted] = useState<boolean>(false)
 
-  const [selectedAddress, setSelectedAddress] = useState<string[]>(["0xc71691d2586722307Bc1105F01E2C312b43d02E5","0x52cd33c4c0CA3d0eD69Eff8cf423e4eBc3cBee27"])
+  const [selectedAddress, setSelectedAddress] = useState<string[]>(["0x79369226fe743EC278C7169B83D2FEd7A0500642","0x52cd33c4c0CA3d0eD69Eff8cf423e4eBc3cBee27"])
   useEffect(() => {
     let inputId = inputCurrencyId
     let outputId = outputCurrencyId
@@ -173,10 +173,10 @@ export default function Swap({ history }: RouteComponentProps) {
       inputId = WBNB.address
     if(outputId === '')
       outputId = '0x52cd33c4c0CA3d0eD69Eff8cf423e4eBc3cBee27'
-    if (inputId.toUpperCase() === 'BBC') {
+    if (inputId.toUpperCase() === 'ETH') {
       inputId = WBNB.address
     }
-    if (outputId.toUpperCase() === 'BBC') {
+    if (outputId.toUpperCase() === 'ETH') {
       outputId = WBNB.address
     }
     const newAddresses : string[] = [inputId.toLowerCase(), outputId.toLowerCase()];

@@ -216,12 +216,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/flamezbbc",
+    href: "https://t.me/leapbbc",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/Flamez_io",
+    href: "https://twitter.com/Leap_io",
   },
   {
     label: "Discord",
@@ -231,7 +231,7 @@ export const socials = [
   {
     label: "Medium",
     icon: "MediumIcon",
-    href: "https://medium.com/@flamezswap",
+    href: "https://medium.com/@leapswap",
     
   },
 ];

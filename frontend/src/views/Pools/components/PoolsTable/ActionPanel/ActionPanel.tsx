@@ -251,7 +251,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
         {(isXs || isSm || isMd) && totalStakedRow}
         {shouldShowBlockCountdown && blocksRow}
         <Flex mb="8px" justifyContent={['flex-end', 'flex-end', 'flex-start']}>
-          <LinkExternal href={`https://flamez-dex.netlify.app/token/${getAddress(earningToken.address)}`} bold={false}>
+          <LinkExternal href={`https://leap-dex.netlify.app/token/${getAddress(earningToken.address)}`} bold={false}>
             {t('See Token Info')}
           </LinkExternal>
         </Flex>

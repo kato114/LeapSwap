@@ -90,20 +90,55 @@ export default function Pool() {
 
   return (
     <Page>
-      <ButtonMenu activeIndex={clickIndex} onItemClick={handleClick} scale="md" variant="primary"  marginBottom="20px">
-             <ButtonMenuItem as={Link} to="/swap">
-               {t('Swap')}
-             </ButtonMenuItem>
-             <ButtonMenuItem as={Link} to={`${url}`}>
-               {t('Liquidity')}
-             </ButtonMenuItem>
+      <ButtonMenu activeIndex={clickIndex} onItemClick={handleClick} scale="md" variant="primary" marginBottom="20px">
+        <ButtonMenuItem as={Link} to="/swap">
+          {t('Swap')}
+        </ButtonMenuItem>
+        <ButtonMenuItem as={Link} to={`${url}`}>
+          {t('Liquidity')}
+        </ButtonMenuItem>
       </ButtonMenu>
       <LiquidityBody>
         <AppHeader title={t('Your Liquidity')} subtitle={t('Remove liquidity to receive tokens back')} />
-        <Body style={{background: "rgba(9, 29, 61, 0.6)", overflow:"hidden", position: "relative"}}>
-          <div style={{position: "absolute", width: "18px", height: "400px", top:"-60px", background:"radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)", opacity:"0.1", transform:"rotate(56.29deg)"}} />
-          <div style={{position: "absolute", width: "18px", height: "400px", top:"-200px", left:"250px", background:"radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)", opacity:"0.1", transform:"rotate(-76.69deg)"}} />
-          <div style={{position: "absolute", width: "18px", height: "400px", top:"-40px", left:"300px", background:"radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)", opacity:"0.1", transform:"rotate(100.65deg)"}} />
+        <Body style={{ background: '#040904', overflow: 'hidden', position: 'relative' }}>
+          <div
+            style={{
+              position: 'absolute',
+              width: '18px',
+              height: '400px',
+              top: '-60px',
+              background:
+                'radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)',
+              opacity: '0.1',
+              transform: 'rotate(56.29deg)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              width: '18px',
+              height: '400px',
+              top: '-200px',
+              left: '250px',
+              background:
+                'radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)',
+              opacity: '0.1',
+              transform: 'rotate(-76.69deg)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              width: '18px',
+              height: '400px',
+              top: '-40px',
+              left: '300px',
+              background:
+                'radial-gradient(34.12% 43.12% at 60.66% 50%, #FFFFFF 0%, #CDFFFC 15.63%, #1EF6E9 36.46%, #14AAC6 47.92%, #0866B5 67.71%, rgba(8, 102, 181, 0) 100%)',
+              opacity: '0.1',
+              transform: 'rotate(100.65deg)',
+            }}
+          />
           {renderBody()}
           {account && !v2IsLoading && (
             <Flex flexDirection="column" alignItems="center" mt="24px">
