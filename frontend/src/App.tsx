@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { Router, Redirect, Route, Switch } from 'react-router-dom'
+import { Router, Redirect, Route, Switch, HashRouter } from 'react-router-dom'
 import { ResetCSS } from '@pancakeswap/uikit'
 import BigNumber from 'bignumber.js'
 import useEagerConnect from 'hooks/useEagerConnect'
@@ -64,14 +64,14 @@ const App: React.FC = () => {
   usePollCoreFarmData()
 
   return (
-    <Router history={history}>
+    <HashRouter> {/* history={history} */}
       <ResetCSS />
       <GlobalStyle />
       <GlobalCheckClaimStatus excludeLocations={['/collectibles']} />
       <Menu>
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
-            <Route path="/" exact  component={Swap}>
+            <Route path="/" exact component={Swap}>
               {/* <Home /> */}
             </Route>
             <Route exact path="/pool">
@@ -167,7 +167,7 @@ const App: React.FC = () => {
       <EasterEgg iterations={2} />
       <ToastListener />
       <DatePickerPortal />
-    </Router>
+    </HashRouter>
   )
 }
 

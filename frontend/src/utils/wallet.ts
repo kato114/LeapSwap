@@ -17,7 +17,7 @@ export const setupNetwork = async () => {
         params: [
           {
             chainId: `0x${chainId.toString(16)}`,
-            chainName: 'Butan Chain Mainnet',
+            chainName: 'PepeSync Testnet',
             nativeCurrency: {
               name: 'ETH',
               symbol: 'ETH',
